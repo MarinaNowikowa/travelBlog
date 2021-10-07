@@ -1,0 +1,44 @@
+$main_dark: #000;
+$main_lite: #fff;
+$main_highlite: #fbd784;
+$main_buttons: #ffa343;
+$main_shift: 18px;
+$main_border:rgba(255, 255, 255, 0.3);
+$border_radius: 8px;
+$font_stack: 'Open Sans', sans-serif;
+
+@import 'header';
+@import 'section-main';
+@import 'section-cols';
+@import 'section-gallary';
+@import 'section-border';
+@import 'footer';
+@import 'mediaScreen';
+
+html,
+body {
+  font: $main_shift $font_stack;
+  line-height: 1.7;
+}
+
+body {
+  background: $main_dark url('/img/header.jpg') no-repeat center top;
+  background-size: 100% auto;
+  color: $main_lite;
+}
+
+.content {
+  padding: 0 $main_shift $main_shift;
+  max-width: 1460px;
+  margin: 0 auto;
+  p {
+    margin-bottom: 30px;
+  }
+
+  &_small{
+    max-width: 934px;
+    padding: 0 41px 41px;
+    margin: 0 auto;
+  }
+}
+

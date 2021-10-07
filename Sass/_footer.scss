@@ -1,0 +1,129 @@
+.footer{
+margin-bottom: 166px;
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 106px;
+    }
+
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5px;
+    }
+
+    &__link{
+        color:$main_lite;
+        text-decoration: none;
+        font-size: 15px;
+        display: inline-block;
+        margin-right: 50px;
+
+        &:hover,&:visited,
+        &:active{
+            color:$main_lite;
+        }
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+}
+
+.subscribe {
+  width: 27%;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49.03px;
+    margin-bottom: 50px;
+  }
+}
+
+.email {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-bottom: 1px solid $main_border;
+
+  &__form {
+    background: none;
+    border: none;
+    font: 15px $font_stack;
+    padding: 30px 120px 30px 3px;
+    color: $main_lite;
+
+    &::placeholder {
+      color: $main_border;
+      opacity: 0.5;
+    }
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+
+  &__button {
+    position: relative;
+    padding: 0;
+    height: 100%;
+    width: 69.14px;
+    border-radius: $border_radius $border_radius 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.icon__right {
+  width: 30px;
+  height: 30px;
+  background: url('/img/arrow_right.svg') no-repeat center center;
+  background-size: contain;
+}
+
+.menu{
+    &__title{
+        color:$main_highlite;
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 35px;
+    }
+
+    &__item{
+        margin-bottom: 25px;
+    }
+
+    &__link{
+        color:$main_lite;
+        text-decoration: none;
+
+        &:hover,&:visited,
+        &:active{
+            color:$main_lite;
+        }
+    }
+}
+
+.social-horisontal{
+    display: flex;
+
+    &__item{
+        display: inline-block;
+        margin-left: 51px;
+    }
+
+    &__link{
+        display: inline-block;
+        opacity: 1;
+        transition: opacity 0.3s;
+
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}

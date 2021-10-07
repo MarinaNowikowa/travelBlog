@@ -1,0 +1,77 @@
+.section__gallary {
+  margin-top: 250px;
+}
+
+.gallary {
+  position: relative;
+  display: flex;
+
+  &__slide {
+    position: relative;
+    width: 100%;
+    padding-bottom: 67%;
+    background-size: cover;
+    display: none;
+
+    &-active{
+      display: block;
+    }
+  }
+
+  &__btn-left {
+    position: absolute;
+    top: 50%; 
+    width: 20px;
+    height: 20px;
+    background: url('/img/arrow/coolicon_1.png') no-repeat center center;
+    background-size: contain;
+    margin-left: 20px;   
+    cursor: pointer;
+  }
+
+  &__btn-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: url('/img/arrow/coolicon.png') no-repeat center center;
+    background-size: contain;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  &__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}
+
+.main-title_centred {
+  text-align: center;
+  margin-bottom: 0px;
+
+  .main-title__summary {
+    justify-content: center;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 72px;
+      height: 2px;
+      margin-left: 32px;
+      background: $main_highlite;
+    }
+  }
+}
+.arrow-link_centred {
+  justify-content: center;
+}

@@ -1,0 +1,40 @@
+.section-border{
+    margin-top: 262px;
+    padding-bottom: 47px;
+    border-bottom: 1px solid $main_border;
+    margin-bottom: 55px;
+}
+
+.start{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  &__title{
+      font-size: 48px;
+      font-weight: 700;
+      margin-right: 811px;
+  }
+  &__desc{
+      font-size: 22px;
+      margin-right: 55px;
+  }
+  &__content{
+      display: flex;
+      align-items: center;
+  }
+}
+
+.button{
+    border:none;
+    background: $main_buttons;
+    font: 700 17px $font_stack;
+    padding: 24px 74px 23px 69px;
+    border-radius: $border_radius;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover{
+        background: $main_highlite;
+    }
+}
